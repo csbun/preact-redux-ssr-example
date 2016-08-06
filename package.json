@@ -12,7 +12,9 @@
     "babel-register": "^6.11.6",
     "express": "^4.14.0",
     "preact": "^5.6.0",
-    "preact-render-to-string": "^3.0.5"
+    "preact-redux": "^1.0.1",
+    "preact-render-to-string": "^3.0.5",
+    "redux": "^3.5.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",

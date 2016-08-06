@@ -19,10 +19,12 @@ export default class Clock extends Component {
     // stop when not renderable
     clearInterval(this.timer);
   }
-  render(props, state) {
+  render({ setAge }, state) {
     const time = new Date(state.time).toLocaleTimeString();
-    return (<p>
-      It is <span>{ time }</span> now!
-    </p>);
+    return (
+      <div>
+        <p><button onClick={ () => setAge(0) }>Reset Age</button></p>
+        <p>It is <span>{ time }</span> now!</p>
+      </div>);
   }
 }

@@ -3,9 +3,14 @@
 
 import { h } from 'preact';
 import render from 'preact-render-to-string';
+import container from './container';
 
-import App from './components/App';
+module.exports = function (initData) {
+  // Render the component to a string
+  const html = render(container(initData));
 
-module.exports = function (data) {
-  return render(<App {...data}/>);
+  return {
+    html,
+    state: initData,
+  };
 };
