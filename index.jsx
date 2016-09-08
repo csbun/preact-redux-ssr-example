@@ -40,9 +40,6 @@ class ChildComponent extends Component {
 const Child = connect(reducer)(ChildComponent);
 
 class App extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (<div id="my-app">
       <Provider store={store}>
